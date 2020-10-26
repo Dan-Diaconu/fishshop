@@ -1,0 +1,34 @@
+div>ul>li
+div+p+bq
+    // blockquote = bq 
+div+div>p>span+em 
+div+div>p>span+em^bq
+div+div>p>span+em^^^bq
+ul>li*5
+    // *5 multiplication
+div>(header>ul>li*2>a)+footer>p
+    // () grouping
+(div>dl>(dt+dd)*3)+footer>p
+div#header+div.page+div#footer.class1.class2.class3
+    // # id     . class
+ul>li.item$*5
+ul>li.item$$$*5
+    // $ numbering 1,2..  $$ 01, 02 ..   $$$  001, 002..
+ul>li.item$@-*5
+    // @-  after $ means change direction
+ul>li.item$@3*5
+    // @3*5 numbering from 3 to 8(5 elements)
+a{Click me}
+    // {} text
+p>{Click }+a{here}+{ to continue}
+(header > ul.nav > li*5) + footer
+
+
+Same sintax:
+.wrap>.content	            div.wrap>div.content
+em>.info	                em>span.info
+ul>.item*3	                ul>li.item*3
+table>#row$*4>[colspan=2]	table>tr#row$*4>td[colspan=2]
+
+Lore ipsum
+    ul.generic-list>lorem10.item*4
